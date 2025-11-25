@@ -1,0 +1,70 @@
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services {
+  padding: 8rem 0;
+  background: white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  color: #1f2937;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  background: #f8fafc;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  h3 {
+    color: #2563eb;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero {
+    padding: 6rem 0;
+  }
+}

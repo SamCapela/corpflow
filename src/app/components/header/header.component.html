@@ -1,0 +1,12 @@
+<header class="header">
+  <div class="container header__inner">
+    <a routerLink="/" class="logo">CorpFlow</a>
+    <nav class="nav" [class.open]="isMenuOpen">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Accueil</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+    <button class="burger" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

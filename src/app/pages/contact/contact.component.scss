@@ -1,0 +1,56 @@
+.hero-contact {
+  background: #f1f5f9;
+  padding: 6rem 0;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.contact {
+  padding: 6rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.info h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info p {
+  margin-bottom: 1rem;
+
+  strong {
+    color: #2563eb;
+  }
+}
+
+.form {
+  input, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

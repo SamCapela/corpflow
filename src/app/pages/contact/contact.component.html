@@ -1,0 +1,27 @@
+<section class="hero-contact">
+  <div class="container">
+    <h1>Contactez-nous</h1>
+    <p>Une question ? Un projet ? On vous répond sous 24h.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container grid">
+    <div class="info">
+      <h2>On est là pour vous</h2>
+      <p><strong>Email :</strong> contact@corpflow.fr</p>
+      <p><strong>Tél :</strong> +33 1 76 45 32 10</p>
+      <p><strong>Adresse :</strong> 128 rue La Boétie<br>75008 Paris</p>
+    </div>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+      <input type="text" placeholder="Nom complet *" formControlName="name">
+      <input type="email" placeholder="Email *" formControlName="email">
+      <input type="text" placeholder="Société" formControlName="company">
+      <textarea rows="6" placeholder="Votre message *" formControlName="message"></textarea>
+      <button type="submit" class="btn btn-primary" [disabled]="form.invalid || submitted">
+        {{ submitted ? 'Envoi...' : 'Envoyer' }}
+      </button>
+    </form>
+  </div>
+</section>
